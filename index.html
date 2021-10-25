@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset= "UTF-8">
+<title>Калькулятор</title>
+<script src="script.js" defer></script>
+<style>
+body{
+font-family: "Times New Roman";
+font-size:x-large;
+}
+form{background-color:#33CCFF; font-size:x-large; }
+#o{background-color:#9ACD32; font-size:x-large;}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+
+<form id="f" class="col-4 mx-auto">
+<div class="row m-3 p-3">
+<label>Товар:
+    <select id="tipes">
+	<option selected="selected">Выбери из списка</option>
+          <option  value="z1" >Карандаш</option>
+          <option  value="z2" >Ручка</option>
+          <option  value="z3" >Краски</option>
+		  
+    </select>
+</label>
+<div id="rad" style="display:none">
+ <label><input name="r" type="radio" value="r1">Синяя</label>
+ <label><input name="r" type="radio" value="r2">Чёрная</label>
+ </div>
+ <div id="chek" style="display:none">
+ <label><input name="c" id="m1" type="checkbox" value="c1">Акварель</label>
+ <label><input name="c" id="m2" type="checkbox" value="c2">Гуашь</label>
+ </div>
+ </div>
+ 
+<div class="mx-auto d-flex justify-content-center m-3 p-3">
+<div> Цена за единицу продукции:<div id="price" class="text-white">0</div> <div> рублей</div></div>
+<label> Количество <input name="val1" type="text" id="kol"></label>
+</div>
+ </form>
+ <div class="col-1 mx-auto">
+ <button class=" m-1 p-3 btn btn-primary " id="butt">Подсчитать</button></div>
+<div id="o" class="flex-row col-2 mx-auto">
+<div class=" mx-auto d-flex flex-row m-1 p-2 justify-content-around">
+<div>Итого </div>
+<div id="result" class="text-white"> 0 </div>
+<div> рублей</div>
+</div>
+
+</div>
+ 
+</div>
+</body>
+</html>
